@@ -16,8 +16,17 @@ class GestionPedidos
     /**
      * Registra un nuevo pedido y su detalle dentro de una transaccion.
      */
+    /**
+     * @param int $idCliente Debe provenir de la sesion autenticada del usuario,
+     * validada previamente en el controlador que invoca este metodo. Nunca debe
+     * recibirse directo desde $_POST o $_GET sin verificar contra la sesion.
+     */
     public function crearPedido(int $idCliente, array $productos, float $total): int
     {
+        if (empty($productos)) {
+            throw new InvalidArgumentException('El arreglo de productos no puede estar vacio');
+        }
+
         $this->conexion->beginTransaction();
 
         try {
