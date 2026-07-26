@@ -69,7 +69,7 @@ Todo cambio se integra a `main` mediante Pull Request, con revisión y aprobaci�
 ## Colaboradores
 
 - Carlos Maldonado ([@Carlos-maldonado578](https://github.com/Carlos-maldonado578)) — Owner
-- *(colaborador agregado con acceso de escritura para revisión de Pull Requests e Issues)*
+- Luis Fuentes     ([@luisbergen1986](https://github.com/luisbergen1986)) — Colaborador
 
 ## Estado del proyecto
 
